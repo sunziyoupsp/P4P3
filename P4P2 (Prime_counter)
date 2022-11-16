@@ -1,0 +1,14 @@
+def prime_counter(n):
+    counter = 0
+    for x in range(n):
+        if x <= 1:
+            continue
+        for i in range(2, x):
+            if (x % i) == 0:
+                break
+        else:
+            counter += 1
+    print("There are",counter,"prime numbers from 1 to",n)
+
+prime_counter(10)
+prime_counter(20)
