@@ -1,0 +1,12 @@
+rate = float(input("Enter the exchange rate from USD to MXN: "))
+check = int(input("Enter 0 to convert USD to MXN, or 1 vice versa: "))
+if check == 0:
+    MXN = float(input("Enter the MXN amount: "))
+    USD = MXN * rate
+    print(MXN," MXN equals ",round(USD,2),"USD")
+elif check ==1:
+    USD = float(input("Enter the USD amount: "))
+    MXN = USD / rate + 0.01
+    print(USD," USD equals ",round(MXN,2),"MXB")
+else:
+    print("Invalid number.")
