@@ -1,0 +1,13 @@
+def is_77(list):
+    same = False
+    for i in range(len(list)-1):
+        first = list[i]
+        second = list[i+1]
+        if first == second:
+            same = True
+            break
+    print(same)
+
+is_77([1,7,7])
+is_77([1,7,1,7])
+is_77([1,1,1,7,1,1,7,7,1])
