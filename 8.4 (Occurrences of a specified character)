@@ -1,0 +1,10 @@
+def count(s,ch):
+    count = 0
+    for i in s:
+        if i == ch:
+            count += 1
+    return count
+
+string = input("Enter the string: ")
+ch = input("Enter a character: ")
+print(count(string, ch))
