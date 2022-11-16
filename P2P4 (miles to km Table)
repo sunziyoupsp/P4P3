@@ -1,0 +1,6 @@
+print("Miles\tKilometers\t|\tKilometers\t Miles")
+for x in range (1,11):
+    k = x * 1.609
+    k2 = x*5
+    m = round(k2 / 1.609,3)
+    print(x,"\t",k,"  \t|\t",k2,"\t\t",m)
