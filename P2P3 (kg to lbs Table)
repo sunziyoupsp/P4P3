@@ -1,0 +1,5 @@
+print("Kilograms\tPounds")
+for x in range(1,100):
+    k = x * 2
+    p = k * 2.2
+    print(k,"\t\t",round(p,1))
