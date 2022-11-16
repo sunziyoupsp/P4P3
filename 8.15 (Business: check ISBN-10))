@@ -1,0 +1,9 @@
+s = input("Enter the first 9 digits of an ISBN-10 as a string: ")
+total = 0
+for i in range(9):
+    total += int(s[i]*(i+1))
+if total % 11 == 0:
+    last = "X"
+else:
+    last = total % 11
+print("The ISBN-10 number is",s+str(last)) 
