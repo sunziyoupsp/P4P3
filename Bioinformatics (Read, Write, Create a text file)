@@ -1,4 +1,4 @@
-with open("C:/Users/sunzi/Desktop/Project 2/genome_dna.txt") as f:
+with open("C:/Users/Desktop/genome_dna.txt") as f:
     genome = f.readline()
     
 exon1 = genome[0:63]
@@ -8,6 +8,6 @@ print(exon1)
 print("The length of genome is",len(genome))
 print("The length of exon1 is",len(exon1), ", and the length of intron is",len(intron1))
 
-with open("C:/Users/sunzi/Desktop/Project 2/coding.txt",'a')as file:
+with open("C:/Users/Desktop/coding.txt",'a')as file:
     file.write(exon1)
 print(intron1)
