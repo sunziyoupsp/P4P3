@@ -1,0 +1,23 @@
+'''
+Write a program that creates a multidimensional list. The number of rows and columns
+should be determined by the user. The program should ask the user to enter values for each
+cell. The program should print the final list on the screen along with the sum of each row.
+'''
+
+matrix = []
+num_row = eval(input("Enter the number of rows: "))
+num_col = eval(input("Enter the number of columns: "))
+for row in range(num_row):
+    matrix.append([])
+    for col in range(num_col):
+        value = eval(input("Enter an integer number and press 'Enter': "))
+        matrix[row].append(value)
+    
+print(matrix)
+result = []
+for row in range(num_row):
+    total = 0
+    for col in range(num_col):
+        total += matrix[row][col]
+    result.append(total)
+print(result)
