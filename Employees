@@ -1,0 +1,23 @@
+'''
+Write a program that stores the employee IDs of ten employees along with their names and
+email addresses. Print the IDs, names and email addresses on the screen. Create a list and
+append the email addresses to the list. Print the list on the screen.
+'''
+
+database = [
+    ['ID1', 'name1', 'email1'],
+    ['ID2', 'name2', 'email2'],
+    ['ID3', 'name3', 'email3'],
+    ['ID4', 'name4', 'email4'],
+    ['ID5', 'name5', 'email5'],
+    ['ID6', 'name6', 'email6'],
+    ['ID7', 'name7', 'email7'],
+    ['ID8', 'name8', 'email8'],
+    ['ID9', 'name9', 'email9'],
+    ['ID10', 'name10', 'email10'],        
+]
+print(database)
+email_list = []
+for i in range(len(database)):
+    email_list.append(database[i][2])
+print(email_list)
