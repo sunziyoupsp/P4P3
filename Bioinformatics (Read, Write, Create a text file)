@@ -1,3 +1,19 @@
+'''
+Write a program called LastName_Bioinformatics. py, that will:
+a) open the file “genomic_dna.txt”
+b) save the contents of the file in a variable called “genome”
+c) identify a substring called exon1, from genome, that has an index of 0:63
+d) the rest of the “genome” [64: end of genome] is assigned to variable “intron”
+e) print the length of “genome”
+f) print the length of “exon1” and “intron1”
+g) write the contents of “exon1” to another file called “coding.txt”
+h) print the contents of “intron1” to the screen
+i) close the file genomic_dna.txt 
+
+genome_dna.txt =
+"ATCGATCGATCGATCGACTGACTAGTCATAGCTATGCATGTAGCTACTCGATCGATCGATCGATCGATCGATCGATCGATCGATCATGCTATCATCGATCGATATCGATGCATCGACTACTAT"
+'''
+
 with open("C:/Users/Desktop/genome_dna.txt") as f:
     genome = f.readline()
     
@@ -8,6 +24,7 @@ print(exon1)
 print("The length of genome is",len(genome))
 print("The length of exon1 is",len(exon1), ", and the length of intron is",len(intron1))
 
-with open("C:/Users/Desktop/coding.txt",'a')as file:
-    file.write(exon1)
+with open("C:/Users/Desktop/coding.txt",'a')as newFile:
+    newFile.write(exon1)
 print(intron1)
+f.close()
